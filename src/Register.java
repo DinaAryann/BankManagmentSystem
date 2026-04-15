@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -41,6 +44,7 @@ public class Register extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton5 = new javax.swing.JRadioButton();
         jRadioButton6 = new javax.swing.JRadioButton();
+        jLabel16 = new javax.swing.JLabel();
         jTextField11 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -49,6 +53,7 @@ public class Register extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -61,7 +66,6 @@ public class Register extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1039, 564));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.SystemColor.activeCaption, java.awt.SystemColor.activeCaption));
         jPanel1.setLayout(null);
@@ -77,7 +81,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(650, 330, 80, 30);
+        jTextField2.setBounds(650, 330, 70, 30);
 
         jTextField3.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -90,11 +94,11 @@ public class Register extends javax.swing.JFrame {
 
         jTextField4.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(80, 380, 650, 40);
+        jTextField4.setBounds(80, 380, 640, 40);
 
         jTextField5.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(460, 450, 270, 30);
+        jTextField5.setBounds(460, 450, 260, 30);
 
         jTextField6.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +111,7 @@ public class Register extends javax.swing.JFrame {
 
         jTextField7.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField7);
-        jTextField7.setBounds(80, 260, 650, 40);
+        jTextField7.setBounds(80, 260, 640, 40);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setText("Initial Deposit Amount");
@@ -148,9 +152,13 @@ public class Register extends javax.swing.JFrame {
         jPanel1.add(jRadioButton6);
         jRadioButton6.setBounds(510, 340, 90, 21);
 
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-money-50.png"))); // NOI18N
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(0, 0, 50, 70);
+
         jTextField11.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField11);
-        jTextField11.setBounds(440, 550, 270, 30);
+        jTextField11.setBounds(440, 550, 280, 30);
 
         jTextField8.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField8);
@@ -167,7 +175,7 @@ public class Register extends javax.swing.JFrame {
 
         jTextField10.setBackground(java.awt.SystemColor.inactiveCaptionBorder);
         jPanel1.add(jTextField10);
-        jTextField10.setBounds(80, 550, 280, 70);
+        jTextField10.setBounds(80, 550, 280, 60);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setText("Employer Name");
@@ -183,6 +191,17 @@ public class Register extends javax.swing.JFrame {
         jLabel13.setText("I Confirm That The Information Provided is Accuarate And Agree To The Terms And Conditions Of The Bank.");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(90, 510, 610, 16);
+
+        jButton2.setBackground(java.awt.SystemColor.activeCaption);
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setText("Register");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(340, 630, 170, 40);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setText("Occupation");
@@ -224,23 +243,22 @@ public class Register extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(80, 120, 70, 16);
 
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setText("Account Registration Form");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(190, 20, 600, 50);
+        jLabel2.setBounds(160, 20, 600, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/16172.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 930, 680);
+        jLabel1.setBounds(0, 0, 830, 680);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 932, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 834, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,6 +289,21 @@ public class Register extends javax.swing.JFrame {
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        int response = JOptionPane.showConfirmDialog(
+        null,
+        "Are you sure the information you provided is correct?",
+        "Warning",
+        JOptionPane.OK_CANCEL_OPTION,
+        JOptionPane.WARNING_MESSAGE
+);
+        if (response == JOptionPane.OK_OPTION) {
+    User r=new User();
+    r.setVisible(true);
+    this.dispose();
+}
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -309,6 +342,7 @@ public class Register extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -316,6 +350,7 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

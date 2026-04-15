@@ -26,9 +26,13 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jSeparator1 = new javax.swing.JSeparator();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -37,51 +41,70 @@ public class login extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Bank Managment System");
-        setPreferredSize(new java.awt.Dimension(1039, 564));
 
+        jPanel1.setBackground(java.awt.SystemColor.activeCaption);
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-password-20.png"))); // NOI18N
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(620, 350, 70, 60);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-username-20_1.png"))); // NOI18N
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(620, 300, 70, 60);
+
+        jLabel12.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-bank-64 (1).png"))); // NOI18N
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(700, 180, 180, 120);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(java.awt.SystemColor.activeCaptionBorder);
+        jLabel7.setText("Password");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(650, 330, 220, 90);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(java.awt.SystemColor.activeCaptionBorder);
+        jLabel10.setText("Username");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(650, 300, 140, 60);
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(630, 300, 230, 40);
-
-        jPasswordField1.setText("jPasswordField1");
+        jTextField1.setBounds(610, 310, 250, 40);
         jPanel1.add(jPasswordField1);
-        jPasswordField1.setBounds(630, 360, 230, 40);
+        jPasswordField1.setBounds(610, 360, 250, 40);
 
-        jSeparator1.setBackground(new java.awt.Color(0, 102, 204));
-        jSeparator1.setForeground(new java.awt.Color(0, 153, 204));
-        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(570, 110, 90, 460);
-
+        jCheckBox1.setForeground(java.awt.SystemColor.activeCaptionText);
         jCheckBox1.setSelected(true);
         jCheckBox1.setText("Remember Me?");
         jPanel1.add(jCheckBox1);
-        jCheckBox1.setBounds(630, 410, 120, 20);
+        jCheckBox1.setBounds(610, 410, 120, 20);
 
+        jLabel4.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel4.setText("Login To Continue");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(690, 250, 120, 16);
+        jLabel4.setBounds(680, 290, 120, 16);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Create Account");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(770, 500, 110, 16);
+        jLabel5.setBounds(770, 510, 110, 16);
 
-        jButton1.setBackground(new java.awt.Color(38, 166, 154));
+        jButton1.setBackground(java.awt.SystemColor.activeCaption);
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Register");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,87 +112,79 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(70, 510, 170, 40);
+        jButton1.setBounds(20, 510, 170, 40);
 
         jButton2.setBackground(java.awt.SystemColor.activeCaption);
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("LOGIN");
         jPanel1.add(jButton2);
-        jButton2.setBounds(670, 450, 170, 40);
+        jButton2.setBounds(610, 450, 250, 40);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-logo-24.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-money-50.png"))); // NOI18N
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(10, 0, 50, 70);
+        jLabel13.setBounds(0, 0, 50, 70);
 
-        jLabel15.setFont(new java.awt.Font("Mongolian Baiti", 1, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel15.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel15.setText("Your Money, Your Future, Our Trust.");
         jPanel1.add(jLabel15);
-        jLabel15.setBounds(40, -10, 810, 100);
+        jLabel15.setBounds(50, -10, 320, 100);
 
-        jButton3.setBackground(new java.awt.Color(66, 66, 66));
+        jButton3.setBackground(java.awt.SystemColor.activeCaption);
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Exit");
         jPanel1.add(jButton3);
-        jButton3.setBounds(310, 510, 170, 40);
+        jButton3.setBounds(230, 510, 170, 40);
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-password-32 (1).png"))); // NOI18N
-        jPanel1.add(jLabel12);
-        jLabel12.setBounds(720, 180, 80, 70);
-
-        jLabel9.setFont(new java.awt.Font("Mongolian Baiti", 1, 14)); // NOI18N
-        jLabel9.setText(" and efficient way to access your accounts anytime, anywhere.");
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel9.setText(" an efficient way to access your accounts anytime, anywhere.");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(90, 340, 810, 100);
+        jLabel9.setBounds(430, 30, 810, 100);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-bank-80.png"))); // NOI18N
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(200, 190, 140, 90);
-
-        jLabel10.setFont(new java.awt.Font("Mongolian Baiti", 1, 14)); // NOI18N
-        jLabel10.setText("Our Bank Management System provides a simple, secure, ");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(100, 320, 810, 100);
-
-        jLabel7.setFont(new java.awt.Font("Mongolian Baiti", 1, 14)); // NOI18N
-        jLabel7.setText("Manage your finances with confidence and ease. ");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(100, 300, 810, 100);
-
-        jLabel8.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
-        jLabel8.setText("Bank System");
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel8.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel8.setText("Online Banking");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(100, 260, 310, 100);
+        jLabel8.setBounds(430, -10, 360, 90);
 
         jLabel6.setForeground(new java.awt.Color(153, 0, 0));
         jLabel6.setText("Not Registered Yet?");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(620, 500, 130, 16);
+        jLabel6.setBounds(610, 510, 130, 16);
 
-        jLabel2.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Welcome");
+        jLabel2.setText("Welcome!");
+        jLabel2.setMaximumSize(new java.awt.Dimension(200, 56));
+        jLabel2.setMinimumSize(new java.awt.Dimension(200, 56));
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(630, 110, 230, 100);
+        jLabel2.setBounds(620, 140, 220, 80);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/16172.jpg"))); // NOI18N
-        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.SystemColor.activeCaption, java.awt.SystemColor.activeCaption));
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 970, 610);
+        jLabel1.setBounds(410, 0, 560, 610);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-password-50_1.png"))); // NOI18N
         jPanel1.add(jLabel14);
         jLabel14.setBounds(720, 180, 50, 60);
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vertical-low-angle-shot-buildings-new-york_181624-38456.png"))); // NOI18N
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(0, 0, 430, 610);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 970, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 970, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 599, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 609, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -208,7 +223,9 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -217,7 +234,6 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
